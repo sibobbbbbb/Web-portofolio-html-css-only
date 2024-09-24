@@ -1,7 +1,96 @@
-body{
-    background-color: #FFFFFF;
-    font-family: Arial, sans-serif;
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
 }
 
+/* 1. home sec */
+.home{
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+/* 1.1 nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px; 
+    margin-left: 10px;
+    color: #445964;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #445964;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* 1.2 home desc */
+.home-detail{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+span div{
+    justify-content: space-around;
+}
+.description{
+    margin-top: 40px;
+}
+
+.description h1{
+    font-size: 20px;
+    color: #445964;
+    margin-bottom: 10px;
+}
+
+.description p{
+    font-size: 40px;
+    color: #445964;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;             
+    background-color: #2F3B42;       
+    color: white;                    
+    text-decoration: none;          
+    border-radius: 20px;             
+    font-size: 16px;                 
+    font-weight: bold;               
+    text-align: center;   
+}
+
+.sosmed a {
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 20px;
+    text-decoration: none; 
+}

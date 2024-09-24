@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farhan's Portofolio</title>
+    <title>Farhan's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="navbar">
+    <section class="home">
+      <!-- Navbar -->
       <nav>
-        <h2>Portofolio</h2>
+        <div class="logo-container">
+          <img src="images/logo.svg" alt="Logo" class="logo" />
+          <h2 class="logo-text">Portfolio</h2>
+        </div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about_me">About Me</a></li>
@@ -18,6 +22,33 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Home Description -->
+      <span class="home-detail">
+        <div class="home-desc">
+          <!-- Description -->
+          <div class="description">
+            <h1>Hi, I'm Farhan.</h1>
+            <p>An Informatics Engineering student at the Bandung Institute of Technology.</p>
+            <h1>Welcome to my portfolio website</h1>
+            <a href="#" class="button">About Me </a>
+          </div>
+
+          <!-- Sosmed -->
+          <div class="sosmed">
+            <a href="https://github.com/sibobbbbbb" target="_blank">
+              <img src="images/Github.svg" alt="GitHub" width="25" />
+            </a>
+            <a href="https://www.linkedin.com/in/farhan-raditya-aji/" target="_blank">
+              <img src="images/Linkedin.svg" alt="LinkedIn" width="25"/>
+            </a>
+            <a href="https://www.instagram.com/farhan.raditya29/" target="_blank">
+              <img src="images/Instagram.svg" alt="Instagram" width="25" />
+            </a>
+          </div>
+        </div>
+        <img src="images/home.svg" alt="home image" width="550" />
+      </span>
     </section>
     <section class="about_me"></section>
     <section class="technologies"></section>
