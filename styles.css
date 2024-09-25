@@ -38,14 +38,6 @@ nav ul {
   gap: 20px;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-}
-
 nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -66,18 +58,6 @@ nav ul li a {
   justify-content: space-between;
   padding-top: 80px;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .home-detail {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .home-detail img {
-    width: 100%;
-    margin-top: 20px;
-  }
 }
 
 .home-desc {
@@ -130,12 +110,6 @@ span div {
   height: 100vh;
 }
 
-@media (max-width: 768px) {
-  .about_me {
-    padding: 80px 20px;
-  }
-}
-
 section > h1 {
   padding-top: 20px;
   font-size: 40px;
@@ -179,21 +153,6 @@ section > h1 {
   padding: 40px;
 }
 
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    padding-bottom: 140px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .grid-item {
   text-align: center;
   border: 1px solid #ccc;
@@ -228,13 +187,6 @@ section > h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   padding: 30px;
-}
-
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
 }
 
 .project {
@@ -298,12 +250,6 @@ section > h1 {
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Contact */
 .contact {
   padding-top: 120px;
@@ -330,4 +276,91 @@ section > h1 {
   font-size: 20px;
   color: #445964;
   margin-bottom: 10px;
+}
+
+
+/* Media */
+@media (max-width: 768px) {
+  /* Untuk tablet atau layar yang lebih kecil */
+  .home-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-detail img {
+    width: 100%;
+  }
+
+  .technologies {
+    padding: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Mengubah layout grid menjadi satu kolom */
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Menyusun ulang navbar secara vertikal */
+    gap: 10px;
+  }
+
+  .about_me {
+    padding: 40px 20px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Layout grid untuk satu kolom pada layar kecil */
+  }
+
+  .project {
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  .contact .sosmed {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-detail {
+    padding: 20px;
+  }
+
+  .home-desc h1 {
+    font-size: 24px;
+  }
+
+  .description p {
+    font-size: 18px;
+  }
+
+  .about_me {
+    padding: 20px;
+  }
+
+  .grid-container {
+    gap: 20px;
+  }
+
+  .projects {
+    padding: 40px 20px; /* Kurangi padding di samping pada layar lebih kecil */
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Layout grid menjadi satu kolom */
+    padding: 0 10px; /* Tambahkan sedikit padding agar konten tidak menempel pada sisi layar */
+  }
+
+  .project {
+    padding: 20px;
+  }
 }
