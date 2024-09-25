@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 /* 1. home sec */
@@ -88,12 +89,6 @@ span div {
   text-align: center;
 }
 
-.sosmed a {
-  justify-content: flex-end;
-  flex-direction: row;
-  margin-right: 20px;
-  text-decoration: none;
-}
 
 /* About me */
 .about_me {
@@ -172,5 +167,41 @@ section > h1 {
 }
 
 /* Projects */
+.projects {
+  padding-top: 130px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+
 
 /* Contact */
+.contact{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.sosmed{
+  padding-top: 30px;
+}
+
+.sosmed a {
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.contact p{
+  padding-top: 5px;
+  font-size: 20px;
+  color: #445964;
+  margin-bottom: 10px;
+}
