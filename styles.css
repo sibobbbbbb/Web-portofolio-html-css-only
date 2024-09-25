@@ -89,6 +89,10 @@ span div {
   text-align: center;
 }
 
+.button:hover {
+  background-color: #445964;
+} 
+
 
 /* About me */
 .about_me {
@@ -168,24 +172,92 @@ section > h1 {
 
 /* Projects */
 .projects {
-  padding-top: 130px;
-  padding-left: 100px;
-  padding-right: 100px;
-  justify-content: center;
+  padding: 80px;
   text-align: center;
-  height: 100vh;
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 30px;
+}
 
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project h1 {
+  font-size: 24px;
+  color: #263138;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #445964;
+  margin-bottom: 20px;
+}
+
+.button.view-project {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #263138;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.button.view-project:hover {
+  background-color: #445964;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #445964;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Contact */
 .contact{
-    padding-top: 100px;
+    padding-top: 120px;
     padding-left: 100px;
     padding-right: 100px;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 86vh;
 }
 
 .sosmed{
