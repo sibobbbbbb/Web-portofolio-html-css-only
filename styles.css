@@ -79,7 +79,7 @@ span div{
 .button {
     display: inline-block;
     padding: 10px 20px;             
-    background-color: #2F3B42;       
+    background-color: #263138;       
     color: white;                    
     text-decoration: none;          
     border-radius: 20px;             
@@ -93,4 +93,29 @@ span div{
     flex-direction: row;
     margin-right: 20px;
     text-decoration: none; 
+}
+
+.about_me {
+    padding-top: 160px;
+    padding-left: 400px;
+    padding-right: 400px;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; 
+}
+
+.about_me h1{
+    padding-top: 20px;
+    font-size: 40px;
+    color: #445964;
+}
+
+.about_me h1 span{
+    color: #263138;
+}
+
+.about_me p{
+    padding-top: 20px;
+    color: #445964;
+    font-size: 20px;
 }
