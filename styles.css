@@ -32,6 +32,20 @@ nav {
   color: #445964;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -47,9 +61,23 @@ nav ul li a {
 
 /* 1.2 home desc */
 .home-detail {
-  padding-top: 80px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 80px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .home-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-detail img {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .home-desc {
@@ -91,17 +119,21 @@ span div {
 
 .button:hover {
   background-color: #445964;
-} 
-
+}
 
 /* About me */
 .about_me {
-  padding-top: 160px;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding: 160px 400px;
+  text-align: center;
   justify-content: center;
   text-align: center;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .about_me {
+    padding: 80px 20px;
+  }
 }
 
 section > h1 {
@@ -143,8 +175,23 @@ section > h1 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px; 
+  gap: 40px;
   padding: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .grid-item {
@@ -181,6 +228,13 @@ section > h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .project {
@@ -251,16 +305,16 @@ section > h1 {
 }
 
 /* Contact */
-.contact{
-    padding-top: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
-    justify-content: center;
-    text-align: center;
-    height: 86vh;
+.contact {
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: center;
+  text-align: center;
+  height: 86vh;
 }
 
-.sosmed{
+.sosmed {
   padding-top: 30px;
 }
 
@@ -271,7 +325,7 @@ section > h1 {
   text-decoration: none;
 }
 
-.contact p{
+.contact p {
   padding-top: 5px;
   font-size: 20px;
   color: #445964;
