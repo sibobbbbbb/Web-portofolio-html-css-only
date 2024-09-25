@@ -1,121 +1,176 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 /* 1. home sec */
-.home{
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-right: 15%;
+.home {
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 15%;
 }
 
 /* 1.1 nav */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-text {
-    font-size: 24px; 
-    margin-left: 10px;
-    color: #445964;
+  font-size: 24px;
+  margin-left: 10px;
+  color: #445964;
 }
 
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 60px;
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 60px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #445964;
-    font-size: 17px;
-    font-weight: bold;
+nav ul li a {
+  text-decoration: none;
+  color: #445964;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 /* 1.2 home desc */
-.home-detail{
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-around;
+.home-detail {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.home-desc{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.home-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-span div{
-    justify-content: space-around;
+span div {
+  justify-content: space-around;
 }
-.description{
-    margin-top: 40px;
-}
-
-.description h1{
-    font-size: 20px;
-    color: #445964;
-    margin-bottom: 10px;
+.description {
+  margin-top: 40px;
 }
 
-.description p{
-    font-size: 40px;
-    color: #445964;
-    margin-bottom: 10px;
+.description h1 {
+  font-size: 20px;
+  color: #445964;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 40px;
+  color: #445964;
+  margin-bottom: 10px;
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;             
-    background-color: #263138;       
-    color: white;                    
-    text-decoration: none;          
-    border-radius: 20px;             
-    font-size: 16px;                 
-    font-weight: bold;               
-    text-align: center;   
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #263138;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .sosmed a {
-    justify-content: flex-end;
-    flex-direction: row;
-    margin-right: 20px;
-    text-decoration: none; 
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
+/* About me */
 .about_me {
-    padding-top: 160px;
-    padding-left: 400px;
-    padding-right: 400px;
-    justify-content: center;
-    text-align: center;
-    height: 100vh; 
+  padding-top: 160px;
+  padding-left: 400px;
+  padding-right: 400px;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
 }
 
-.about_me h1{
-    padding-top: 20px;
-    font-size: 40px;
-    color: #445964;
+section > h1 {
+  padding-top: 20px;
+  font-size: 40px;
+}
+.dark {
+  color: #445964;
 }
 
-.about_me h1 span{
-    color: #263138;
+.dark span {
+  color: #263138;
 }
 
-.about_me p{
-    padding-top: 20px;
-    color: #445964;
-    font-size: 20px;
+.about_me p {
+  padding-top: 20px;
+  color: #445964;
+  font-size: 20px;
 }
+
+/* Technologies */
+.technologies {
+  padding-top: 130px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.light {
+  color: #263138;
+}
+
+.light span {
+  color: #445964;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; 
+  padding: 40px;
+}
+
+.grid-item {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.grid-item .dark {
+  font-size: 22px;
+}
+
+.icons {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons a {
+  display: inline-block;
+}
+
+/* Projects */
+
+/* Contact */
