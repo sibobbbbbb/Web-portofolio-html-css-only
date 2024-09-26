@@ -202,13 +202,6 @@ section > h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
 .project h1 {
   font-size: 24px;
   color: #263138;
@@ -281,7 +274,6 @@ section > h1 {
 
 /* Media */
 @media (max-width: 768px) {
-  /* Untuk tablet atau layar yang lebih kecil */
   .home-detail {
     flex-direction: column;
     text-align: center;
@@ -296,12 +288,12 @@ section > h1 {
   }
 
   .grid-container {
-    grid-template-columns: 1fr; /* Mengubah layout grid menjadi satu kolom */
+    grid-template-columns: 1fr; 
     padding: 20px;
   }
 
   nav ul {
-    flex-direction: column; /* Menyusun ulang navbar secara vertikal */
+    flex-direction: column;
     gap: 10px;
   }
 
@@ -310,7 +302,7 @@ section > h1 {
   }
 
   .projects-container {
-    grid-template-columns: 1fr; /* Layout grid untuk satu kolom pada layar kecil */
+    grid-template-columns: 1fr; 
   }
 
   .project {
@@ -334,7 +326,7 @@ section > h1 {
   .home-detail {
     padding: 20px;
   }
-
+  
   .home-desc h1 {
     font-size: 24px;
   }
@@ -352,15 +344,35 @@ section > h1 {
   }
 
   .projects {
-    padding: 40px 20px; /* Kurangi padding di samping pada layar lebih kecil */
+    padding: 40px 0px;
   }
 
+  .projects h1{
+    padding-bottom: 30px;
+  }
+
+
+
   .projects-container {
-    grid-template-columns: 1fr; /* Layout grid menjadi satu kolom */
-    padding: 0 10px; /* Tambahkan sedikit padding agar konten tidak menempel pada sisi layar */
+    grid-template-columns: 1fr; 
+    padding: 0 10px; 
   }
 
   .project {
-    padding: 20px;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 40%;
+  }
+
+  .project h1 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 }
