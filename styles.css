@@ -347,11 +347,9 @@ section > h1 {
     padding: 40px 0px;
   }
 
-  .projects h1{
+  .projects >h1{
     padding-bottom: 30px;
   }
-
-
 
   .projects-container {
     grid-template-columns: 1fr; 
