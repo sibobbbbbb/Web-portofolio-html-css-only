@@ -273,6 +273,14 @@ section > h1 {
 
 
 /* Media */
+
+@media(max-width:1250px)
+{
+  .about_me {
+    padding: 160px 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .home-detail {
     flex-direction: column;
